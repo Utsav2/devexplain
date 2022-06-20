@@ -65,10 +65,10 @@ Sinks are configured by another function. Currently, we support `stderr` and `da
 
 ```
 def sinks():
-	return {
-		"stderr": {},
-		"datadog": {},
-	}
+    return {
+        "stderr": {},
+        "datadog": {},
+    }
 ```
 
 
