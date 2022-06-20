@@ -3,7 +3,7 @@
 The goal of this project is to help understand performance and set up guardrails on developer tools in real codebases. 
 For example, OOMs in Typescript server can cause slow and flaky behavior in VSCode. 
 
-Devexplain tries to a hub to help collect all sorts of interesting metrics and send it to various sinks. 
+Devexplain tries to be a hub to help collect all sorts of interesting metrics and send it to various sinks. 
 
 ## Config
 Devexplain can be configured at startup with startup flags.
