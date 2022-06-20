@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/utsav2/devexp-monitor/lib/sink"
-	"github.com/utsav2/devexp-monitor/lib/sink/datadog"
-	"github.com/utsav2/devexp-monitor/lib/sink/stderr"
+	"github.com/utsav2/devexplain/lib/sink"
+	"github.com/utsav2/devexplain/lib/sink/datadog"
+	"github.com/utsav2/devexplain/lib/sink/stderr"
 )
 
 type multiSink struct {

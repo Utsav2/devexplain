@@ -2,7 +2,7 @@ package proc
 
 import (
 	ps "github.com/mitchellh/go-ps"
-	"github.com/utsav2/devexp-monitor/lib"
+	"github.com/utsav2/devexplain/lib"
 )
 
 type ProcInfo struct {

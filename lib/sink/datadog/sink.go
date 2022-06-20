@@ -8,7 +8,7 @@ import (
 	"time"
 
 	datadog "github.com/DataDog/datadog-api-client-go/api/v2/datadog"
-	"github.com/utsav2/devexp-monitor/lib/sink"
+	"github.com/utsav2/devexplain/lib/sink"
 )
 
 type datadogSink struct {

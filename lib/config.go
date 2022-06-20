@@ -3,8 +3,8 @@ package lib
 import (
 	"fmt"
 
-	"github.com/utsav2/devexp-monitor/lib/sink"
-	"github.com/utsav2/devexp-monitor/lib/sink/multi"
+	"github.com/utsav2/devexplain/lib/sink"
+	"github.com/utsav2/devexplain/lib/sink/multi"
 	"go.starlark.net/starlark"
 )
 

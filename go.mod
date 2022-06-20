@@ -1,4 +1,4 @@
-module github.com/utsav2/devexp-monitor
+module github.com/utsav2/devexplain
 
 go 1.16
 

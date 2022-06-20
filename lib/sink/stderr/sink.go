@@ -3,7 +3,7 @@ package stderr
 import (
 	"log"
 
-	"github.com/utsav2/devexp-monitor/lib/sink"
+	"github.com/utsav2/devexplain/lib/sink"
 )
 
 type stderrSink struct{}
