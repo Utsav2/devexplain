@@ -55,8 +55,15 @@ func (s *datadogSink) Metric(name string, val float64) {
 	}
 }
 
-func (s *datadogSink) Log(fmt string, val ...interface{}) {
-	log.Printf(fmt, val...)
+func (s *datadogSink) Log(fmtstr string, val ...interface{}) {
+	_, resp, err := s.apiClient.LogsApi.SubmitLog(s.context(), []datadog.HTTPLogItem{
+		*datadog.NewHTTPLogItem(fmt.Sprintf(fmtstr, val...)),
+	})
+	if err != nil {
+		log.Printf("error sending datadog logs : %s\n", err)
+	} else {
+		log.Printf("datadog logs submission HTTP status: %v\n", resp.StatusCode)
+	}
 }
 
 func (s *datadogSink) Err(err error) {

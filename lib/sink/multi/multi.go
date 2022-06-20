@@ -31,7 +31,7 @@ func (m *multiSink) Err(err error) {
 	}
 }
 
-var validSinks = map[string]func(string) (sink.Sink, error){
+var validSinks = map[string]func(string) (sink.Sink, error) {
 	"stderr":  stderr.New,
 	"datadog": datadog.New,
 }
