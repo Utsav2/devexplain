@@ -6,10 +6,10 @@ def sources():
             }
         },
     }
-	
+
 # where to log data.
 def sinks():
-	return {
-		"stderr": {},
-		"datadog": {},
-	}
+    return {
+        "stderr": {},
+        "datadog": {},
+    }
